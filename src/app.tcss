@@ -8,6 +8,13 @@
   --yellow80: #cc8100;
   --red20: #ffdbde;
   --red80: #bf1d28;
+
+  --primary-color: #f03025;
+  --secondary-color: #fcd6d3;
+  --disable-color: var(--gray20);
+  --seperator-color: var(--gray30);
+  --light-text-color: black;
+  --dark-text-color: white;
 }
 
 @keyframes spin {

@@ -1,23 +1,34 @@
-.home-init {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: var(--white);
+:root {
+  --control-width: 90px;
 }
 
-.home-section {
-  padding: 16px;
-  margin-bottom: 8px;
-  background-color: var(--white);
+.wrap {
+  position: relative;
 }
 
-.home-banners {
-  background-color: var(--white);
+
+.tab-select {
+  position: absolute;
+  top: calc(var(--tf-status-bar-height) + 48px);
+  left: 0;
+  right: 0;
+  padding: 8px 16px;
 }
 
-.home-hot-deals,
-.home-category-multiple {
-  margin-left: -16px;
-  margin-right: -16px;
+.fix-header .tab-select {
+  background: #fff;
+  border-bottom: solid 1px #ccc;
+  position: fixed;
+  padding-top: calc(var(--tf-status-bar-height) + 5px);
+  top: 15rpx;
+}
+
+.top {
+  padding-top: calc(var(--tf-status-bar-height));
+}
+
+.top-content {
+  width: 100%;
+  height: 90px;
+  margin: 0 auto;
 }

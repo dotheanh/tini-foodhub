@@ -1,0 +1,4 @@
+<view class="custom-top-tabs-container">
+  <button onTap="onTapHome" type="ghost" size="small" class="btnTab {{(activeTab == 0) ? 'active' : ''}} right-border">Trang Chủ</button>
+  <button onTap="onTapTrending" type="ghost" size="small" class="btnTab {{(activeTab == 1) ? 'active' : ''}}">Xu Hướng</button>
+</view>

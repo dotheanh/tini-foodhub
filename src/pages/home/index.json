@@ -1,12 +1,9 @@
 {
+  "transparentTitle": "always",
   "defaultTitle": "",
   "titleBarBottomColor": "#fff",
   "allowsBounceVertical": "NO",
   "usingComponents": {
-    "product-section": "components/product-section/index",
-    "category-carousel": "components/category-carousel/index",
-    "banners": "components/banners/index",
-    "section-title": "components/section-title/index",
-    "onboarding": "components/onboarding/index"
+    "custom-top-tabs": "/components/custom-top-tabs/index"
   }
 }

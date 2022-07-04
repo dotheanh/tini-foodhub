@@ -1,0 +1,30 @@
+.custom-top-tabs-container {
+  display: flex;
+  justify-content: center;
+}
+
+.right-border {
+  border-right: 2rpx solid var(--seperator-color);
+}
+
+.right-border:hover {
+  border-right: 2rpx solid var(--seperator-color);
+}
+
+.btnTab {
+  color: var(--light-text-color);
+  font-weight: normal;
+  font-size: small;
+  padding: 0 18rpx;
+  outline: none;
+}
+
+.btnTab.active {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: larger;
+}
+
+.btnTab:hover {
+  background-color: transparent;
+}
