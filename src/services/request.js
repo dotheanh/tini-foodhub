@@ -23,7 +23,7 @@ export const request = async ({ path, method = 'GET', headers = {}, data }) => {
 };
 
 export const fakeRequest = async (res) => {
-  await delay(300);
+  await delay(200);
   return res;
 };
 

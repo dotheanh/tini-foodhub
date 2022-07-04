@@ -1,0 +1,26 @@
+[
+  {
+    "id": 73320913,
+    "title": "Hamburger Hàng Xanh",
+    "thumbnail": "https://salt.tikicdn.com/cache/280x280/ts/product/d7/dc/fd/eac572aabcbdaa3d623c4ed32cd7ba7c.jpg",
+    "reviewerId": 15,
+    "reviewerName": "Đỗ Thế Anh",
+    "reviewerAvt": "https://png.pngtree.com/png-clipart/20210520/ourmid/pngtree-small-eye-handsome-boys-colorless-character-avatar-png-image_3286527.jpg",
+    "postedTime": 1656960072907,
+    "votesCount": 1200,
+    "commentsCount": 300,
+    "viewsCount": 6000
+  },
+  {
+    "id": 99376042,
+    "title": "BeefSteak Lê Duẩn",
+    "thumbnail": "https://salt.tikicdn.com/cache/280x280/ts/product/38/0f/76/3377a65a5e426e395b9984e275886353.jpg",
+    "reviewerId": 16,
+    "reviewerName": "Đỗ Thế Em",
+    "reviewerAvt": "https://png.pngtree.com/png-clipart/20210520/ourmid/pngtree-small-eye-handsome-boys-colorless-character-avatar-png-image_3286527.jpg",
+    "postedTime": 1656950072907,
+    "votesCount": 12,
+    "commentsCount": 3,
+    "viewsCount": 60
+  }
+]

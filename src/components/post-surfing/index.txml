@@ -1,0 +1,3 @@
+<view>
+  HI, I am a post with ID: {{post.id}}
+</view>

@@ -4,6 +4,7 @@
   "titleBarBottomColor": "#fff",
   "allowsBounceVertical": "NO",
   "usingComponents": {
-    "custom-top-tabs": "/components/custom-top-tabs/index"
+    "custom-top-tabs": "/components/custom-top-tabs/index",
+    "post-surfing": "/components/post-surfing/index"
   }
 }

@@ -5,4 +5,11 @@
     </custom-top-tabs>
   </view>
 
+  <view class="posts-list">
+    <view tiki:for="{{posts}}" tiki:for-item="post">
+      <post-surfing post="{{post}}" isLoading="{{isLoading}}">
+      </post-surfing>
+    </view>
+  </view>
+
 </view>
