@@ -17,8 +17,9 @@
     "pages/category-detail/index"
   ],
   "tabBar": {
-    "borderTopActiveColor": "#1A94FF",
+    "borderTopActiveColor": "#f03025",
     "borderTopColor": "#EBEBF0",
+    "selectedColor": "#f03025",
     "items": [
       {
         "name": "Home",
@@ -27,19 +28,19 @@
         "activeIcon": "assets/icons/tab-home-active.png"
       },
       {
-        "name": "Category",
-        "pagePath": "pages/category/index",
-        "icon": "/assets/icons/tab-category.png",
-        "activeIcon": "assets/icons/tab-category-active.png"
-      },
-      {
         "name": "Search",
         "pagePath": "pages/search/index",
         "icon": "/assets/icons/tab-search.png",
         "activeIcon": "assets/icons/tab-search-active.png"
       },
       {
-        "name": "My Account",
+        "name": "Notification",
+        "pagePath": "pages/category/index",
+        "icon": "/assets/icons/tab-notification.png",
+        "activeIcon": "assets/icons/tab-notification-active.png"
+      },
+      {
+        "name": "Profile",
         "pagePath": "pages/account/index",
         "icon": "/assets/icons/tab-account.png",
         "activeIcon": "assets/icons/tab-account-active.png"
