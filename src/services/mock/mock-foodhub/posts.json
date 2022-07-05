@@ -12,7 +12,8 @@
     "postedTime": 1656999030030,
     "votesCount": 1200,
     "commentsCount": 300,
-    "viewsCount": 6000
+    "viewsCount": 6000,
+    "isSaved": false
   },
   {
     "id": 99376042,
@@ -26,6 +27,7 @@
     "postedTime": 1656912630030,
     "votesCount": 12,
     "commentsCount": 3,
-    "viewsCount": 60
+    "viewsCount": 60,
+    "isSaved": false
   }
 ]

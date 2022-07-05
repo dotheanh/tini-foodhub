@@ -1,5 +1,6 @@
 Component({
   data: {
+    isSavedPost: false,
   },
 
   props: {
@@ -7,7 +8,7 @@ Component({
     post: {
       id: '',
       title: '',
-      thumbnail: '',
+      images: [],
       reviewerId: 0,
       reviewerName: "",
       reviewerAvt: "",
@@ -15,13 +16,27 @@ Component({
       votesCount: 0,
       commentsCount: 0,
       viewsCount: 0,
+      isSaved: false,
     },
   },
   
     // các hàm life cycles
-    didMount() {},
+    didMount() {
+      console.log("Render post-surfing");
+      console.log(this.props.post);
+      this.setData({
+        isSavedPost: this.props.post.isSaved
+      });
+    },
   
     // các methods
     methods: {
+      onClickBookmarkButton() {
+        // TODO: TA call API to save post
+      console.log("// TODO: TA call API to save post");
+        this.setData({
+          isSavedPost: !this.data.isSavedPost
+        });
+      },
     }
   });

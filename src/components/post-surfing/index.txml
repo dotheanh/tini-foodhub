@@ -5,10 +5,21 @@
 
   <view class="post-content">
     <view class="top-post-container">
-      <text class="post-title">{{post.title}}</text>
-      <view class="flex">
-        <reviewer-small name="{{post.reviewerName}}" avatar="{{post.reviewerAvt}}" />
-        <post-time time="{{post.postedTime}}" />
+      <view class="top-post-container-left">
+        <text class="post-title">{{post.title}}</text>
+        <view class="flex">
+          <reviewer-small name="{{post.reviewerName}}" avatar="{{post.reviewerAvt}}" />
+          <post-time time="{{post.postedTime}}" />
+        </view>
+      </view>
+      <view class="top-post-container-right">
+        <button size="large" type="ghost" onTap="onClickBookmarkButton">
+          <!-- <view>
+            <view tiki:if="{{isSavedPost}}"> Remove </view>
+            <view tiki:else></view> Save </view>
+          </view> -->
+          <image mode="widthFix" style="width: 35px" src={{isSavedPost? "/assets/icons/icon-bookmark-active.png" : "/assets/icons/icon-bookmark.png"}}></image>
+        </button>
       </view>
     </view>
   </view>

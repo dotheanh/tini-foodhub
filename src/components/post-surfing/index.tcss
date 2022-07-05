@@ -23,6 +23,13 @@
 }
 
 .top-post-container {
+  display: flex;
+  justify-content: space-between;
   margin-top: 20rpx;
-  align-self: flex-start;
+}
+
+.top-post-container-left {
+}
+
+.top-post-container-right {
 }
