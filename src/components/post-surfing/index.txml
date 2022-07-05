@@ -1,3 +1,12 @@
-<view>
-  HI, I am a post with ID: {{post.id}}
+<view class="post-container bg-white radius-8px">
+  <view class="block-content">
+    <image mode="aspectFill" class="image-combo" src="{{post.images[0]}}" />
+  </view>
+
+  <view class="post-content">
+    <view class="top-post-container">
+      <text class="post-title">{{post.title}}</text>
+      <reviewer-small name="{{post.reviewerName}}" avatar="{{post.reviewerAvt}}" />
+    </view>
+  </view>
 </view>

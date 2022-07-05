@@ -1,0 +1,13 @@
+.reviewer-small-container {
+  display: flex;
+}
+
+.image-avatar {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.reviewer-name {
+  color: var(--light-text-color);
+}

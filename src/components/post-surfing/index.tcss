@@ -1,0 +1,28 @@
+.post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40rpx;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding-bottom: 30rpx;
+}
+
+.image-combo {
+  border-radius: 20rpx 20rpx 0 0;
+  width: 90vw;
+}
+
+.post-content {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.top-post-container {
+  margin-top: 20rpx;
+  align-self: flex-start;
+}

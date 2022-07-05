@@ -1,0 +1,4 @@
+<view class="reviewer-small-container">
+  <image mode="aspectFit" class="image-avatar" src="{{avatar}}" />
+  <text class="reviewer-name">{{name}}</text>
+</view>

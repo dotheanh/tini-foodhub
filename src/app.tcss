@@ -13,7 +13,8 @@
   --secondary-color: #fcd6d3;
   --disable-color: var(--gray20);
   --seperator-color: var(--gray30);
-  --light-text-color: black;
+  --bold-color: black;
+  --light-text-color: var(--gray60);
   --dark-text-color: white;
 }
 
@@ -142,4 +143,14 @@ view {
 
 .text-underline {
   text-decoration: underline;
+}
+
+
+.post-title {
+  font-weight: 750;
+  font-size: large;
+}
+
+.image-avatar {
+  border-radius: 100%;
 }
