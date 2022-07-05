@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "reviewer-small": "components/reviewer-small/index"
+    "reviewer-small": "components/reviewer-small/index",
+    "post-time": "components/post-time/index"
   }
 }

@@ -1,0 +1,7 @@
+<view class="post-time-container">
+  <view class="seperator-dot"> • </view>
+  <view>
+    <icon color="var(--light-text-color)" class="icon-time" type="calendar" size="16" />
+  </view>
+  <view class="time">{{formatedTime}}</view>
+</view>

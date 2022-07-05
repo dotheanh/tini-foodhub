@@ -6,7 +6,10 @@
   <view class="post-content">
     <view class="top-post-container">
       <text class="post-title">{{post.title}}</text>
-      <reviewer-small name="{{post.reviewerName}}" avatar="{{post.reviewerAvt}}" />
+      <view class="flex">
+        <reviewer-small name="{{post.reviewerName}}" avatar="{{post.reviewerAvt}}" />
+        <post-time time="{{post.postedTime}}" />
+      </view>
     </view>
   </view>
 </view>
