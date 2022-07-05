@@ -1,0 +1,3 @@
+<view class="food-tag-container">
+  <chip class="mt-medium" content="{{tag}}" />
+</view>

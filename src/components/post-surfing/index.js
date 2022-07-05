@@ -9,6 +9,8 @@ Component({
       id: '',
       title: '',
       images: [],
+      content: "",
+      foodTag: [],
       reviewerId: 0,
       reviewerName: "",
       reviewerAvt: "",

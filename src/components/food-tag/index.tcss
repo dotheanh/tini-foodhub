@@ -1,0 +1,18 @@
+.tu-chip-content {
+  color: var(--primary-color);
+}
+
+.tu-chip:hover {
+  background-color: var(--secondary-color)!important;
+}
+
+.tu-chip {
+  border-color: var(--primary-color)!important;
+}
+
+.food-tag-container {
+  margin-right: 10rpx;
+}
+.food-tag-container .tu-chip {
+  margin-top: 15rpx;
+}

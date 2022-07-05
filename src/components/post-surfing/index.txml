@@ -1,3 +1,6 @@
+<import-sjs from="/utils/utility.sjs" name="{cutOffContent}"></import-sjs>
+<import-sjs from="/utils/common.sjs" name="{nFormatter}"></import-sjs>
+
 <view class="post-container bg-white radius-8px">
   <view class="block-content">
     <image mode="aspectFill" class="image-combo" src="{{post.images[0]}}" />
@@ -14,12 +17,27 @@
       </view>
       <view class="top-post-container-right">
         <button size="large" type="ghost" onTap="onClickBookmarkButton">
-          <!-- <view>
-            <view tiki:if="{{isSavedPost}}"> Remove </view>
-            <view tiki:else></view> Save </view>
-          </view> -->
-          <image mode="widthFix" style="width: 35px" src={{isSavedPost? "/assets/icons/icon-bookmark-active.png" : "/assets/icons/icon-bookmark.png"}}></image>
+          <image mode="widthFix" style="width: 35px" src={{isSavedPost? "/assets/icons/icon-bookmark-active.png"
+            : "/assets/icons/icon-bookmark.png" }}></image>
         </button>
+      </view>
+    </view>
+    <view class="body-post-container">
+      <view class="normal-text">
+        {{cutOffContent(post.content)}}
+      </view>
+      <view class="food-tag-container">
+        <block tiki:for="{{post.foodTag}}">
+          <food-tag tag="{{item}}"></food-tag>
+        </block>
+      </view>
+    </view>
+    
+    <view class="bottom-post-container">
+      <view class="bottom-post-container-left">
+      </view>
+      <view class="bottom-post-container-right normal-text">
+        Lượt xem: {{nFormatter(post.viewsCount, 1, false)}}
       </view>
     </view>
   </view>

@@ -154,3 +154,12 @@ view {
 .image-avatar {
   border-radius: 100%;
 }
+
+.normal-text {
+  color: var(--light-text-color);
+  font-size: small;
+}
+
+.normal-text-color {
+  color: var(--light-text-color);
+}

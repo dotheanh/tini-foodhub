@@ -3,6 +3,7 @@
   "usingComponents": {
     "reviewer-small": "components/reviewer-small/index",
     "post-time": "components/post-time/index",
-    "button": "@tiki.vn/tini-ui/es/tu-button/index"
+    "button": "@tiki.vn/tini-ui/es/tu-button/index",
+    "food-tag": "components/food-tag/index"
   }
 }
