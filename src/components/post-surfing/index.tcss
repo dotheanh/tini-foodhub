@@ -42,3 +42,29 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.post-react-container {
+  display: flex;
+}
+
+.bottom-post-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.bottom-post-container-right {
+  align-self: center;
+}
+
+.vertical-seperator {
+  align-self: center;
+  border-right: 2rpx solid var(--light-text-color);
+  height: 55rpx;
+  margin: 0 15rpx;
+}
+
+.btnUpVote > .active {
+  color: var(--success-color);
+  font-weight: bold;
+}

@@ -32,11 +32,26 @@
         </block>
       </view>
     </view>
-    
-    <view class="bottom-post-container">
+
+    <view class="bottom-post-container normal-text">
       <view class="bottom-post-container-left">
+        <view class="post-react-container">
+          <button class="flex btnUpVote" style="padding: 2px;" size="large" type="ghost" onTap="onClickUpVote">
+            <image mode="widthFix" style="width: 20px; margin-right: 5px;" src={{(votedPost==0)
+              ? "/assets/icons/icon-vote.png" : (votedPost==1) ? "/assets/icons/icon-upvote-active.png"
+              :"/assets/icons/icon-upvote-active.png.png"}}></image>
+            <view class="normal-text {{(votedPost==0) ? '' : 'active'}}">{{nFormatter(post.votesCount, 1, false)}}
+            </view>
+          </button>
+          <view class="vertical-seperator"></view>
+          <button class="flex btnComment" style="padding: 2px;" size="large" type="ghost" onTap="onClickComment">
+            <image mode="widthFix" style="width: 35px;" src="/assets/icons/icon-comment.png"></image>
+            <view class="normal-text">{{nFormatter(post.commentsCount, 1, false)}}
+            </view>
+          </button>
+        </view>
       </view>
-      <view class="bottom-post-container-right normal-text">
+      <view class="bottom-post-container-right">
         Lượt xem: {{nFormatter(post.viewsCount, 1, false)}}
       </view>
     </view>

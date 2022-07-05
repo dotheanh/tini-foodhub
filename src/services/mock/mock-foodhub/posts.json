@@ -15,7 +15,8 @@
     "votesCount": 1200,
     "commentsCount": 300,
     "viewsCount": 6000,
-    "isSaved": false
+    "isSaved": false,
+    "voted": 0
   },
   {
     "id": 99376042,
@@ -32,6 +33,7 @@
     "votesCount": 12,
     "commentsCount": 3,
     "viewsCount": 60,
-    "isSaved": false
+    "isSaved": false,
+    "voted": 0
   }
 ]

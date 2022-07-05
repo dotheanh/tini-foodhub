@@ -16,6 +16,8 @@
   --bold-color: black;
   --light-text-color: var(--gray60);
   --dark-text-color: white;
+  --success-color: #32c052;
+  --danger-color: #dc3545;
 }
 
 @keyframes spin {
@@ -162,4 +164,8 @@ view {
 
 .normal-text-color {
   color: var(--light-text-color);
+}
+
+.normal-text-size {
+  font-size: small;
 }
