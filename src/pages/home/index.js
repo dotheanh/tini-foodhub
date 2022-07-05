@@ -4,12 +4,17 @@ Page({
   data: {
     isLoading: true,
     fixedHeader: true,
+    visibleHeader: true,
     activeTab: 0,
     posts: []
   },
 
   onReady() {
     this.loadData();
+  },
+
+  onPageScroll(event) {
+    this.setData({ visibleHeader: event.scrollTop < 400 }); // hide header when scroll down
   },
 
   async loadData() {

@@ -1,8 +1,10 @@
 <view class="wrap {{fixedHeader ? 'fix-header' : ''}}">
 
   <view class="tab-select">
-    <custom-top-tabs activeTab="{{activeTab}}">
-    </custom-top-tabs>
+    <block tiki:if="{{visibleHeader}}">
+      <custom-top-tabs activeTab="{{activeTab}}">
+      </custom-top-tabs>
+    </block>
   </view>
 
   <view class="posts-list">
