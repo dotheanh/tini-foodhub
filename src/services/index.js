@@ -1,5 +1,7 @@
 import request, { fakeRequest } from "./request";
-import { getReq } from "./web-service";
+import { getReq, postReq } from "./web-service";
+import { logResult, logError } from "../utils/logger";
+import { routes } from "./api/routes";
 
 import mockPostsData from "./mock/mock-foodhub/posts.json";
 
@@ -176,7 +178,27 @@ export const getPosts = () => {
 
 /*************************TEST METHODS FUNCTION/*************************/
 export const getMethodTest = () => {
-  const url = 'https://api.sampleapis.com/beers/ale';
-  getReq({url})
-  .then(value => console.log('value:' , value))
+  const url = "https://api.sampleapis.com/beers/ale";
+  getReq({ url }).then((value) => console.log("value:", value));
+};
+
+/*************************AUTHENTICATION/*************************/
+
+export const getAuthToken = () => {
+  my.getAuthCode({
+    success: (res) => {
+      logResult(res, "token");
+      const code = res.authCode;
+      getTokens({ code });
+    },
+    error: (error) => {
+      logError(error);
+    },
+  });
+};
+
+export const getTokens = async ({ code }) => {
+  const url = routes.authToken;
+  const tokens = await postReq({ url, data: { code } });
+  logResult(tokens);
 };

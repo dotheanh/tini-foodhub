@@ -1,4 +1,4 @@
-import { getPosts, getMethodTest } from '../../services/index';
+import { getPosts, getMethodTest, getAuthToken } from '../../services/index';
 
 Page({
   data: {
@@ -27,7 +27,9 @@ Page({
         getPosts()
       ]);
 
+      //TEST PURPOSE
       getMethodTest();
+      getAuthToken();
 
       this.setData({
         posts,
