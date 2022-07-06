@@ -1,0 +1,32 @@
+<view>
+
+  <view class="page-body">
+    <!-- Suggest Post -->
+    <view tiki:if="{{!searchTerm || !posts.length}}" class="p-medium bg-white mb-2x-small">
+      <view class="title-and-right-button">
+        <view class="mb-small font-bold text-medium">Gợi ý cho bạn</view>
+        <button onTap="onTapToggleViewMode" size="small" type="ghost" class="flex no-hover-button btn-toggle-view-mode">
+          <view class="txt-toggle-view-mode"> Chế độ xem: </view>
+          <image mode="widthFix" style="width: 25px" src={{viewAsGrid ? "/assets/icons/icon-grid-view.png"
+            : "/assets/icons/icon-list-view.png" }}></image>
+        </button>
+      </view>
+
+      <view tiki:if="{{viewAsGrid}}">
+        <!-- Grid View -->
+        <fh-post-section isLoading="{{isLoading}}" skeletons="{{4}}" posts="{{suggestions}}" onTapPost="onTapProduct" />
+      </view>
+      <view tiki:else>
+        <!-- List View (surfing) -->
+        <view tiki:for="{{suggestions}}" tiki:for-item="post">
+          <post-surfing post="{{post}}" isLoading="{{isLoading}}">
+          </post-surfing>
+        </view>
+      </view>
+
+
+    </view>
+
+
+  </view>
+</view>

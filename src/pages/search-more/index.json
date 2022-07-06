@@ -1,0 +1,11 @@
+{
+  "defaultTitle": "Back",
+  "titleBarBottomColor": "#fff",
+  "allowsBounceVertical": "NO",
+  "usingComponents": {
+    "button": "@tiki.vn/tini-ui/es/tu-button/index",
+    "fh-search-bar": "components/fh-search-bar/index",
+    "fh-post-section": "components/fh-post-section/index",
+    "post-surfing": "components/post-surfing/index"
+  }
+}

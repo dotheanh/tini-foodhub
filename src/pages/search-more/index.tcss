@@ -1,0 +1,25 @@
+
+.title-and-right-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-category-list .category-grid-layout {
+  display: flex;
+  overflow-x: auto;
+  padding-left: 20px;
+}
+
+.filter-list-search {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.btn-toggle-view-mode {
+  padding: 0;
+}
+
+.txt-toggle-view-mode {
+  color: var(--light-text-color);
+  margin-right: 5rpx;
+}

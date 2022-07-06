@@ -177,3 +177,7 @@ view {
 .red-ghost-button:hover {
   background-color: transparent;
 }
+
+.no-hover-button:hover {
+  background-color: transparent;
+}

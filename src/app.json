@@ -13,6 +13,7 @@
     "pages/my-coupon/index",
     "pages/my-point/index",
     "pages/search/index",
+    "pages/search-more/index",
     "pages/category/index",
     "pages/category-detail/index"
   ],

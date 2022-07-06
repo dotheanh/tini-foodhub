@@ -229,5 +229,6 @@ Page({
   onTapShowMoreSuggestion() {
     // TODO: TA onTapShowMoreSuggestion
     console.log("// TODO: TA onTapShowMoreSuggestion");
+    my.navigateTo({ url: `pages/search-more/index` });
   },
 });
