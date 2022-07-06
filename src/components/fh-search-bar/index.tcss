@@ -1,0 +1,7 @@
+.tu-search-bar {
+  width: 65vw;
+}
+
+.tu-search-bar .tu-textfield-input {
+  border-radius: 20rpx;
+}

@@ -9,7 +9,6 @@ import {
 import { getStorage, setStorage } from '../../utils/storage';
 import {
   navigateToPDP,
-  loadBadgeCart,
   navigateWithParams,
 } from '../../utils/navigate';
 
@@ -206,10 +205,6 @@ Page({
     }
   },
 
-  onCustomIconEvent(e) {
-    my.navigateTo({ url: 'pages/cart/index' });
-  },
-
   goToCategoryDetail(category) {
     navigateWithParams({
       page: 'category-detail',
@@ -219,7 +214,6 @@ Page({
 
   // Life cycle
   onShow() {
-    loadBadgeCart();
   },
 
   onReady() {

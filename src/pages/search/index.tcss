@@ -1,3 +1,30 @@
+:root {
+  --control-width: 90px;
+}
+
+.wrap {
+  position: relative;
+}
+
+
+.header-search-bar {
+  position: absolute;
+  top: calc(var(--tf-status-bar-height) + 48px);
+  left: 0;
+  right: 0;
+  padding: 8px 16px;
+}
+
+.fix-header .header-search-bar {
+  background: #fff;
+  border-bottom: solid 1px #ccc;
+  position: fixed;
+  padding-top: calc(var(--tf-status-bar-height) + 5px);
+  top: 0;
+  z-index: 999;
+}
+
+
 .search-category-list .category-grid-layout {
   display: flex;
   overflow-x: auto;

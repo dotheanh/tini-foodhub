@@ -1,8 +1,10 @@
 {
-  "defaultTitle": "Search",
-  "titleBarBottomColor": "transparent",
+  "transparentTitle": "always",
+  "defaultTitle": "",
+  "titleBarBottomColor": "#fff",
+  "allowsBounceVertical": "NO",
   "usingComponents": {
-    "search-bar": "components/search-bar/index",
+    "fh-search-bar": "components/fh-search-bar/index",
     "category-section": "components/category-section/index",
     "product-section": "components/product-section/index",
     "empty": "components/empty/index",
