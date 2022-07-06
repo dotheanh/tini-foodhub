@@ -4,6 +4,7 @@
   "titleBarBottomColor": "#fff",
   "allowsBounceVertical": "NO",
   "usingComponents": {
+    "button": "@tiki.vn/tini-ui/es/tu-button/index",
     "fh-search-bar": "components/fh-search-bar/index",
     "category-section": "components/category-section/index",
     "product-section": "components/product-section/index",

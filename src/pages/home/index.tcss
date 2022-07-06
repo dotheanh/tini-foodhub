@@ -35,5 +35,5 @@
 }
 
 .posts-list {
-  padding-top: calc(var(--tf-status-bar-height) + 150rpx);
+  padding-top: calc(var(--tf-status-bar-height) + 130rpx);
 }

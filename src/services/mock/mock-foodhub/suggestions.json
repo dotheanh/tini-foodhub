@@ -16,7 +16,8 @@
     "commentsCount": 300,
     "viewsCount": 6000,
     "isSaved": false,
-    "voted": 0
+    "voted": 0,
+    "price": 45000
   },
   {
     "id": 99376042,
@@ -34,7 +35,8 @@
     "commentsCount": 3,
     "viewsCount": 60,
     "isSaved": false,
-    "voted": 0
+    "voted": 0,
+    "price": 40000
   },
   {
     "id": 99376044,
@@ -53,7 +55,8 @@
     "commentsCount": 33,
     "viewsCount": 6033,
     "isSaved": true,
-    "voted": 0
+    "voted": 0,
+    "price": 30000
   },
   {
     "id": 99374444,
@@ -73,6 +76,7 @@
     "commentsCount": 6335,
     "viewsCount": 153233,
     "isSaved": true,
-    "voted": 0
+    "voted": 0,
+    "price": 140000
   }
 ]

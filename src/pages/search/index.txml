@@ -1,14 +1,22 @@
 <view class="wrap fix-header">
+  <!-- search box -->
   <view class="bg-white">
     <view class="px-medium pb-2x-small header-search-bar">
-      <fh-search-bar
-        value="{{searchTerm}}"
-        onSearch="onSearch"
-        onInput="onInput"
-        onConfirm="onConfirm"
-      />
+      <fh-search-bar value="{{searchTerm}}" onSearch="onSearch" onInput="onInput" onConfirm="onConfirm" />
     </view>
 
+    <view class="page-body">
+      <!-- Suggest Post -->
+      <view tiki:if="{{!searchTerm || !posts.length}}" class="p-medium bg-white mb-2x-small">
+        <view class="title-and-show-more">
+          <view class="mb-small font-bold text-medium">Gợi ý cho bạn</view>
+          <button onTap="onTapShowMoreSuggestion" class="btn-show-more red-ghost-button" size="small" type="ghost">Hiển thị thêm</button>
+        </view>
+        <product-section isLoading="{{isLoading}}" skeletons="{{4}}" products="{{otherProducts}}"
+          onTapProduct="onTapProduct" />
+
+      </view>
+    </view>
 
 
   </view>

@@ -169,3 +169,11 @@ view {
 .normal-text-size {
   font-size: small;
 }
+
+.red-ghost-button {
+  color: var(--primary-color);
+}
+
+.red-ghost-button:hover {
+  background-color: transparent;
+}

@@ -24,6 +24,15 @@
   z-index: 999;
 }
 
+.page-body {
+  padding-top: calc(var(--tf-status-bar-height) + 130rpx);
+}
+
+
+.title-and-show-more {
+  display: flex;
+  justify-content: space-between;
+}
 
 .search-category-list .category-grid-layout {
   display: flex;

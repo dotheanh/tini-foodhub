@@ -219,4 +219,10 @@ Page({
   onReady() {
     this.loadData();
   },
+
+
+  onTapShowMoreSuggestion() {
+    // TODO: TA onTapShowMoreSuggestion
+    console.log("// TODO: TA onTapShowMoreSuggestion");
+  },
 });
