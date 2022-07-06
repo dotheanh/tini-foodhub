@@ -1,6 +1,6 @@
 {
   "name": "food-hub-fe",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "tiki": {
     "appIdentifier": "vn.tiki.miniapp.foodhub.temp",
     "buildNumber": 1
