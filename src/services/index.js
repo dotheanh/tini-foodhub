@@ -1,27 +1,28 @@
-import request, { fakeRequest } from './request';
+import request, { fakeRequest } from "./request";
+import { getReq } from "./web-service";
 
-import mockPostsData from './mock/mock-foodhub/posts.json';
+import mockPostsData from "./mock/mock-foodhub/posts.json";
 
 export const getShopInfoAPI = () => {
-  return request({ path: '/shop' });
+  return request({ path: "/shop" });
 };
 
 export const getCategoriesAPI = () => {
-  return request({ path: '/categories' });
+  return request({ path: "/categories" });
 };
 
 export const getFeaturedProductsAPI = () => {
-  return request({ path: '/featured-products' });
+  return request({ path: "/featured-products" });
 };
 
 export const getNewProductsAPI = () => {
-  return request({ path: '/new-products' });
+  return request({ path: "/new-products" });
 };
 
 export const getDetailProduct = async (productId) => {
   const [products, productDetail] = await Promise.all([
-    request({ path: '/products' }),
-    request({ path: '/product-detail' }),
+    request({ path: "/products" }),
+    request({ path: "/product-detail" }),
   ]);
   const pdb = products.find((p) => p.id == productId);
   const result = {
@@ -32,19 +33,19 @@ export const getDetailProduct = async (productId) => {
 };
 
 export const getUserInfo = () => {
-  return request({ path: '/user' });
+  return request({ path: "/user" });
 };
 
 export const getNumOrders = () => {
-  return request({ path: '/num-orders' });
+  return request({ path: "/num-orders" });
 };
 
 export const getOrders = () => {
-  return request({ path: '/orders' });
+  return request({ path: "/orders" });
 };
 
 export const getCouponsAPI = () => {
-  return request({ path: '/coupons' });
+  return request({ path: "/coupons" });
 };
 
 export const getCouponFromCodeAPI = (code) => {
@@ -57,70 +58,70 @@ export const getCouponFromCodeAPI = (code) => {
 };
 
 export const getCartAPI = () => {
-  return request({ path: '/cart' });
+  return request({ path: "/cart" });
 };
 
 export const getOrderDetail = () => {
-  return request({ path: '/order-detail' });
+  return request({ path: "/order-detail" });
 };
 
 export const getTrackingDetail = () => {
-  return request({ path: '/tracking-detail' });
+  return request({ path: "/tracking-detail" });
 };
 
 export const getMyPoint = () => {
-  return request({ path: '/my-point' });
+  return request({ path: "/my-point" });
 };
 
 export const getBannersAPI = () => {
-  return request({ path: '/banners' });
+  return request({ path: "/banners" });
 };
 
 export const getHotDealProductsAPI = () => {
-  return request({ path: '/hot-deal-products' });
+  return request({ path: "/hot-deal-products" });
 };
 
 export const getSubCategoriesAPI = async (id) => {
-  const subCategories = await request({ path: '/sub-categories' });
+  const subCategories = await request({ path: "/sub-categories" });
   return subCategories[id];
 };
 
 export const getPopularProductsAPI = () => {
-  return request({ path: '/popular-products' });
+  return request({ path: "/popular-products" });
 };
 
 export const getProductsByCategoryIdAPI = () => {
-  return request({ path: '/products' });
+  return request({ path: "/products" });
 };
 
 export const getFiltersAPI = () => {
-  return request({ path: '/filters' });
+  return request({ path: "/filters" });
 };
 
 export const getSortsAPI = () => {
-  return request({ path: '/sorts' });
+  return request({ path: "/sorts" });
 };
 
-export const filterSortProductsAPI = async ({ filters, sort, search = '' }) => {
-  const products = await request({ path: '/products' });
+export const filterSortProductsAPI = async ({ filters, sort, search = "" }) => {
+  const products = await request({ path: "/products" });
   let result = [...products];
 
   if (filters.priceOption)
     switch (filters.priceOption.value) {
-      case '1':
+      case "1":
         result = result.filter((item) => item.price < 100000);
         break;
-      case '2':
+      case "2":
         result = result.filter(
           (item) => item.price >= 100000 && item.price <= 200000
         );
         break;
-      case '3':
+      case "3":
         result = result.filter(
           (item) => item.price >= 200000 && item.price <= 750000
         );
         break;
-      case '4':
+      case "4":
         result = result.filter((item) => item.price > 750000);
         break;
     }
@@ -134,42 +135,48 @@ export const filterSortProductsAPI = async ({ filters, sort, search = '' }) => {
 
   if (sort)
     switch (sort.value) {
-      case '1':
+      case "1":
         break;
-      case '2':
+      case "2":
         result.sort((a, b) => b.id - a.id);
         break;
-      case '3':
+      case "3":
         result.sort((a, b) => a.price - b.price);
         break;
-      case '4':
+      case "4":
         result.sort((a, b) => b.price - a.price);
         break;
     }
 
-  if (search) result = result.filter((p) => p.name.toLowerCase().includes(search.toLowerCase()));
+  if (search)
+    result = result.filter((p) =>
+      p.name.toLowerCase().includes(search.toLowerCase())
+    );
   return result;
 };
 
 export const getOtherProductsAPI = () => {
-  return request({ path: '/other-products' });
+  return request({ path: "/other-products" });
 };
 
 export const getRelativeProductsAPI = () => {
-  return request({ path: '/relative-products' });
+  return request({ path: "/relative-products" });
 };
 
-
-
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
-
-
 
 export const getPosts = () => {
   return fakeRequest(mockPostsData);
+};
+
+/*************************TEST METHODS FUNCTION/*************************/
+export const getMethodTest = () => {
+  const url = 'https://api.sampleapis.com/beers/ale';
+  getReq({url})
+  .then(value => console.log('value:' , value))
 };

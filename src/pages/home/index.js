@@ -1,4 +1,4 @@
-import { getPosts } from '../../services/index';
+import { getPosts, getMethodTest } from '../../services/index';
 
 Page({
   data: {
@@ -26,6 +26,8 @@ Page({
       const [posts] = await Promise.all([
         getPosts()
       ]);
+
+      getMethodTest();
 
       this.setData({
         posts,
