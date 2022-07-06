@@ -17,7 +17,8 @@
     "viewsCount": 6000,
     "isSaved": false,
     "voted": 0,
-    "price": 45000
+    "price": 45000,
+    "address": "227 Nguyễn Văn Cừ, Phường 4, Quận 5, Thành phố Hồ Chí Minh"
   },
   {
     "id": 99376042,
@@ -36,7 +37,8 @@
     "viewsCount": 60,
     "isSaved": false,
     "voted": 0,
-    "price": 40000
+    "price": 40000,
+    "address": "Số 285, Đường Cách Mạng Tháng 8 - Phường 12 - Quận 10 - TP Hồ Chí Minh"
   },
   {
     "id": 99376044,
@@ -56,7 +58,8 @@
     "viewsCount": 6033,
     "isSaved": true,
     "voted": 0,
-    "price": 30000
+    "price": 30000,
+    "address": "229 - 231 Đinh Tiên Hoàng, P. Tân Định, Quận 1, TP. HCM"
   },
   {
     "id": 99374444,
@@ -77,6 +80,7 @@
     "viewsCount": 153233,
     "isSaved": true,
     "voted": 0,
-    "price": 140000
+    "price": 140000,
+    "address": "229 - 231 Đinh Tiên Hoàng, P. Tân Định, Quận 1, TP. HCM"
   }
 ]

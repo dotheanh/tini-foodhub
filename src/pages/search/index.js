@@ -5,6 +5,8 @@ import {
   getOtherProductsAPI,
   filterSortProductsAPI,
   getSortsAPI,
+  
+  getSuggestions,
 } from '../../services/index';
 import { getStorage, setStorage } from '../../utils/storage';
 import {
@@ -17,6 +19,7 @@ Page({
 
   data: {
     isLoading: false,
+    suggestions: [],
     categories: [],
     otherProducts: [],
     products: [],
@@ -178,8 +181,9 @@ Page({
     });
 
     try {
-      const [categories, products, otherProducts, filters, sorts, recentKeys] =
+      const [suggestions, categories, products, otherProducts, filters, sorts, recentKeys] =
         await Promise.all([
+          getSuggestions(),
           getCategoriesAPI(),
           getProductsByCategoryIdAPI(),
           getOtherProductsAPI(),
@@ -189,6 +193,7 @@ Page({
         ]);
 
       this.setData({
+        suggestions,
         categories,
         products,
         otherProducts,

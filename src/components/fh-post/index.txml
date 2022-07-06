@@ -1,0 +1,44 @@
+<import-sjs from="../../utils/common.sjs" name="{moneyFormatter}"></import-sjs>
+
+<view class="post {{className}}">
+  <view tiki:if="{{isLoading}}">
+    <view class="skeleton post-image-skeleton radius-8px mb-2x-small"/>
+    <view class="skeleton skeleton-font-medium skeleton-70-width mb-4x-small"/>
+    <view class="skeleton skeleton-font-medium skeleton-100-width"/>
+  </view>
+  <view
+    tiki:else
+    catchTap="_onTapPost"
+  >
+    <image
+      class="radius-8px mb-2x-small radius-8px"
+      src="{{post.images[0]}}"
+    />
+    <text
+      class="mb-4x-small font-bold"
+      number-of-lines="{{1}}"
+    >
+      {{post.title}}
+    </text>
+    <text
+      class="mb-4x-small normal-text"
+      number-of-lines="{{2}}"
+    >
+      {{post.address}}
+    </text>
+    <view class="flex items-center">
+      <text
+        class="font-bold mr-2x-small"
+        number-of-lines="{{1}}"
+      >
+        {{moneyFormatter(post.price)}}
+      </text>
+      <!-- <view
+        tiki:if="{{post.discount_rate}}"
+        class="text-white post-badge font-bold radius-8px px-4x-small"
+      >
+        {{`-${post.discount_rate}%`}}
+      </view> -->
+    </view>
+  </view>
+</view>

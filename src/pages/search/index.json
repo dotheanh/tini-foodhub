@@ -7,7 +7,7 @@
     "button": "@tiki.vn/tini-ui/es/tu-button/index",
     "fh-search-bar": "components/fh-search-bar/index",
     "category-section": "components/category-section/index",
-    "product-section": "components/product-section/index",
+    "fh-post-section": "components/fh-post-section/index",
     "empty": "components/empty/index",
     "filter": "components/filter/index",
     "filtered-list": "components/filtered-list/index",

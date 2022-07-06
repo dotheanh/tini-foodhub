@@ -4,6 +4,7 @@ import { logResult, logError } from "../utils/logger";
 import { routes } from "./api/routes";
 
 import mockPostsData from "./mock/mock-foodhub/posts.json";
+import mockSuggestionsData from "./mock/mock-foodhub/suggestions.json";
 
 export const getShopInfoAPI = () => {
   return request({ path: "/shop" });
@@ -174,6 +175,9 @@ export const getRelativeProductsAPI = () => {
 
 export const getPosts = () => {
   return fakeRequest(mockPostsData);
+};
+export const getSuggestions = () => {
+  return fakeRequest(mockSuggestionsData);
 };
 
 /*************************TEST METHODS FUNCTION/*************************/

@@ -12,8 +12,8 @@
           <view class="mb-small font-bold text-medium">Gợi ý cho bạn</view>
           <button onTap="onTapShowMoreSuggestion" class="btn-show-more red-ghost-button" size="small" type="ghost">Hiển thị thêm</button>
         </view>
-        <product-section isLoading="{{isLoading}}" skeletons="{{4}}" products="{{otherProducts}}"
-          onTapProduct="onTapProduct" />
+        <fh-post-section type="horizontal" isLoading="{{isLoading}}" skeletons="{{4}}" posts="{{suggestions}}"
+          onTapPost="onTapProduct" />
 
       </view>
     </view>

@@ -1,0 +1,23 @@
+.post-section-vertical {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 20px;
+}
+
+.post-section-horizontal {
+  display: flex;
+  overflow-x: auto;
+}
+
+.post-section-horizontal .post {
+  margin-left: 16px;
+}
+
+.post-section-horizontal .post:last-child {
+  padding-right: 16px;
+}
+
+.post-section-horizontal .post > view {
+  width: calc(100vw / 2.9);
+}

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fh-post": "components/fh-post/index"
+  }
+}
