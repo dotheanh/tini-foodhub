@@ -1,5 +1,5 @@
 .tu-search-bar {
-  width: 65vw;
+  width: calc(100vw - 240rpx);
 }
 
 .tu-search-bar .tu-textfield-input {
