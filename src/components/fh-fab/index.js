@@ -25,15 +25,27 @@ Component({
 
       onClickCreatePost() {
         console.log("onClickCreatePost");
+        this.setData({
+          isShowActions: !this.data.isShowActions
+        })
       },
       onClickFoodMatcher() {
         console.log("onClickFoodMatcher");
+        this.setData({
+          isShowActions: !this.data.isShowActions
+        })
       },
       onClickScrollTop() {
         console.log("onClickScrollTop");
+        this.setData({
+          isShowActions: !this.data.isShowActions
+        })
       },
       onClickRefresh() {
         console.log("onClickRefresh");
+        this.setData({
+          isShowActions: !this.data.isShowActions
+        })
       },
     }
   });

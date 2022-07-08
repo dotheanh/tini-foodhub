@@ -1,3 +1,13 @@
+
+:root {
+  --start-pos-from-bottom: 2vh;
+  --start-pos-from-bottom-icon: 8vh;
+  --end-pos-from-bottom-icon-0: 11vh;
+  --end-pos-from-bottom-icon-1: 19vh;
+  --end-pos-from-bottom-icon-2: 27vh;
+  --end-pos-from-bottom-icon-3: 35vh;
+}
+
 .floating-action-button-container {
   display: flex;
   flex-direction: column-reverse;
@@ -6,7 +16,7 @@
 
 .floating-action-button {
   position: fixed;
-  bottom: 12px;
+  bottom: var(--start-pos-from-bottom);
   right: 12px;
   background-color: var(--primary-color);
   border-radius: 50%;
@@ -69,23 +79,23 @@
 }
 
 @-webkit-keyframes run-0 {
-  from {bottom: 15px;}
-  to {bottom: 60px;}
+  from {bottom: var(--start-pos-from-bottom-icon);}
+  to {bottom: var(--end-pos-from-bottom-icon-0);}
 }
 
 @-webkit-keyframes run-1 {
-  from {bottom: 15px;}
-  to {bottom: 110px;}
+  from {bottom: var(--start-pos-from-bottom-icon);}
+  to {bottom: var(--end-pos-from-bottom-icon-1);}
 }
 
 @-webkit-keyframes run-2 {
-  from {bottom: 15px;}
-  to {bottom: 160px;}
+  from {bottom: var(--start-pos-from-bottom-icon);}
+  to {bottom: var(--end-pos-from-bottom-icon-2);}
 }
 
 @-webkit-keyframes run-3 {
-  from {bottom: 15px;}
-  to {bottom: 210px;}
+  from {bottom: var(--start-pos-from-bottom-icon);}
+  to {bottom: var(--end-pos-from-bottom-icon-3);}
 }
 
 
