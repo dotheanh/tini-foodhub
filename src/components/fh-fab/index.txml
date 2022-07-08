@@ -9,7 +9,7 @@
   <block tiki:if="{{isShowActions}}">
     <view class="actions-button-container">
       <block tiki:for="{{actions}}">
-        <view onTap="catchClick" class="action-button action-button-{{index}} flex justify-center items-center">
+        <view onTap="{{item.onClick}}" class="action-button action-button-{{index}} flex justify-center items-center">
           <view class="action-title">{{item.label}}</view>
           <c-icon class="action-icon" type="{{item.icon}}" size="20" color="white" />
         </view>

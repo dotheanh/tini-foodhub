@@ -4,10 +4,10 @@ Component({
     },
     props: { 
       actions: [
-      { label: "Đăng Bài", icon: "edit", onClick: "" },
-      { label: "Food Matcher", icon: "geometry", onClick: "" },
-      { label: "Đầu Trang", icon: "arrow_up", onClick: "" },
-      { label: "Làm Mới", icon: "refresh", onClick: "" },
+      { label: "Đăng Bài", icon: "edit", onClick: "onClickCreatePost" },
+      { label: "Food Matcher", icon: "geometry", onClick: "onClickFoodMatcher" },
+      { label: "Đầu Trang", icon: "arrow_up", onClick: "onClickScrollTop" },
+      { label: "Làm Mới", icon: "refresh", onClick: "onClickRefresh" },
     ],
     onBackToTop() {},
    },
@@ -23,8 +23,17 @@ Component({
         })
       },
 
-      catchClick() {
-        
-      }
+      onClickCreatePost() {
+        console.log("onClickCreatePost");
+      },
+      onClickFoodMatcher() {
+        console.log("onClickFoodMatcher");
+      },
+      onClickScrollTop() {
+        console.log("onClickScrollTop");
+      },
+      onClickRefresh() {
+        console.log("onClickRefresh");
+      },
     }
   });

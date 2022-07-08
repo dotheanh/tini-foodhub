@@ -53,29 +53,19 @@
 }
 
 .action-button-0 {
-  bottom: 60px;
-  background-color: var(--secondary-color);
-  
-  animation: run-0 0.2s, spin 0.3s linear;
+  animation: run-0 0.2s linear forwards, spin 0.3s linear;
 }
 
 .action-button-1 {
-  position: fixed;
-  bottom: 110px;
-  
-  animation: run-1 0.2s, spin 0.3s linear;
+  animation: run-1 0.2s linear forwards, spin 0.3s linear;
 }
 
 .action-button-2 {
-  bottom: 160px;
-  
-  animation: run-2 0.2s, spin 0.3s linear;
+  animation: run-2 0.2s linear forwards, spin 0.3s linear;
 }
 
 .action-button-3 {
-  bottom: 210px;
-  
-  animation: run-3 0.2s, spin 0.3s linear;
+  animation: run-3 0.2s linear forwards, spin 0.3s linear;
 }
 
 @-webkit-keyframes run-0 {
