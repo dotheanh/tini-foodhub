@@ -5,6 +5,7 @@
   "allowsBounceVertical": "NO",
   "usingComponents": {
     "custom-top-tabs": "/components/custom-top-tabs/index",
-    "post-surfing": "/components/post-surfing/index"
+    "post-surfing": "/components/post-surfing/index",
+    "fh-fab": "/components/fh-fab/index"
   }
 }

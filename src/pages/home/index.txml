@@ -1,5 +1,7 @@
 <view class="wrap {{fixedHeader ? 'fix-header' : ''}}">
 
+  <fh-fab></fh-fab>
+
   <view class="tab-select">
     <block tiki:if="{{visibleHeader}}">
       <custom-top-tabs activeTab="{{activeTab}}">

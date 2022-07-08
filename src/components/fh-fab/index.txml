@@ -1,0 +1,19 @@
+<view>
+  <view onTap="onClick" class="floating-action-button flex justify-center items-center">
+    <view class="{{isShowActions ? 'fab-active' : 'fab-inactive'}}">
+
+      <c-icon type="plus" size="{{isShowActions ? '30' : '25'}}" color="white"/>
+    </view>
+
+  </view>
+  <block tiki:if="{{isShowActions}}">
+    <view class="actions-button-container">
+      <block tiki:for="{{actions}}">
+        <view onTap="catchClick" class="action-button action-button-{{index}} flex justify-center items-center">
+          <view class="action-title">{{item.label}}</view>
+          <c-icon class="action-icon" type="{{item.icon}}" size="20" color="white" />
+        </view>
+      </block>
+    </view>
+  </block>
+</view>

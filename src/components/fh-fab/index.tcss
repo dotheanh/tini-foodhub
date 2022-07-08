@@ -1,0 +1,120 @@
+.floating-action-button-container {
+  display: flex;
+  flex-direction: column-reverse;
+  z-index: 99;
+}
+
+.floating-action-button {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  z-index: 999;
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.fab-active {
+  animation: plus-to-x 0.3s linear forwards;
+}
+
+.fab-inactive {
+  animation: x-to-plus 0.3s linear forwards;
+}
+
+
+.action-button {
+  width: 80rpx;
+  height: 80rpx;
+  position: fixed;
+  right: 12px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+
+.action-button .action-title {
+  background-color: var(--light-background);
+  position: fixed;
+  right: 130rpx;
+  display: none;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  border: solid 2rpx;
+}
+
+.action-button:hover {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.action-button:hover .action-title {
+  display: inherit;
+}
+
+.action-button-0 {
+  bottom: 60px;
+  background-color: var(--secondary-color);
+  
+  animation: run-0 0.2s, spin 0.3s linear;
+}
+
+.action-button-1 {
+  position: fixed;
+  bottom: 110px;
+  
+  animation: run-1 0.2s, spin 0.3s linear;
+}
+
+.action-button-2 {
+  bottom: 160px;
+  
+  animation: run-2 0.2s, spin 0.3s linear;
+}
+
+.action-button-3 {
+  bottom: 210px;
+  
+  animation: run-3 0.2s, spin 0.3s linear;
+}
+
+@-webkit-keyframes run-0 {
+  from {bottom: 15px;}
+  to {bottom: 60px;}
+}
+
+@-webkit-keyframes run-1 {
+  from {bottom: 15px;}
+  to {bottom: 110px;}
+}
+
+@-webkit-keyframes run-2 {
+  from {bottom: 15px;}
+  to {bottom: 160px;}
+}
+
+@-webkit-keyframes run-3 {
+  from {bottom: 15px;}
+  to {bottom: 210px;}
+}
+
+
+
+
+@keyframes plus-to-x {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes x-to-plus {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
